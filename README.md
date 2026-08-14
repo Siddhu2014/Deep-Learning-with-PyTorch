@@ -24,10 +24,6 @@ Implement the mechanism
 Use PyTorch to automate it
 ```
 
-For example, before using Autograd, the underlying ideas of derivatives, gradients, the chain rule, and gradient descent were explored manually.
-
-Similarly, before using `nn.Linear`, a trainable neuron was implemented directly using tensors, weights, bias, loss, gradients, and parameter updates.
-
 The objective is to develop the ability to **reason about PyTorch code**, not simply memorize APIs.
 
 ---
@@ -59,8 +55,6 @@ Topics covered:
 * Matrix operations
 * NumPy interoperability
 * CPU and GPU tensors
-
-The chapter establishes the tensor mental model required for everything that follows.
 
 [Open `01_Tensors/main.ipynb`](01_Tensors/main.ipynb)
 
@@ -96,33 +90,62 @@ Topics covered:
 * SGD
 * Complete PyTorch training loops
 
-The chapter connects the mathematical concept of backpropagation with PyTorch's automatic differentiation engine.
-
 [Open `02_Autograd/main.ipynb`](02_Autograd/main.ipynb)
 
 ---
 
 ## 03 — Neural Networks
 
-**Status: Next**
+**Status: Completed**
 
-Moving from a single linear neuron to actual neural networks.
+Moving from a single linear neuron to multi-layer neural networks.
 
-Planned topics:
+Topics covered:
 
 * `nn.Module`
 * Multiple layers
 * Parameters
-* `nn.Sequential`
 * Activation functions
 * Forward propagation
 * Multi-layer networks
 * Nonlinear transformations
-* Network architecture
+* Network width and depth
+* Training and validation
+* `DataLoader`
+* CPU vs GPU for small workloads
+
+[Open `03_Neural_Networks/main.ipynb`](03_Neural_Networks/main.ipynb)
 
 ---
 
-## 04 — Training
+## 04 — Classification
+
+**Status: Completed**
+
+Understanding classification from logits through nonlinear decision boundaries.
+
+Topics covered:
+
+* Classification targets and class indices
+* Multi-class classifiers
+* `CrossEntropyLoss`
+* Logits
+* `argmax` and class prediction
+* Training and validation accuracy
+* `model.train()` and `model.eval()`
+* `torch.no_grad()`
+* Model width and depth experiments
+* Run-to-run variation
+* Decision-boundary visualization
+* Linear vs nonlinear classification
+* ReLU and nonlinear decision boundaries
+* Two Moons dataset
+
+[Open `04_Classification/main.ipynb`](04_Classification/main.ipynb)
+
+---
+
+## 05 — Training
 
 **Status: Planned**
 
@@ -132,7 +155,6 @@ Planned topics:
 
 * Loss functions
 * Optimizers
-* Training loops
 * Learning rates
 * Validation
 * Evaluation
@@ -143,7 +165,7 @@ Planned topics:
 
 ---
 
-## 05 — Computer Vision
+## 06 — Computer Vision
 
 **Status: Planned**
 
@@ -161,7 +183,7 @@ Planned topics:
 
 ---
 
-## 06 — Sequence Models
+## 07 — Sequence Models
 
 **Status: Planned**
 
@@ -177,7 +199,7 @@ Planned topics:
 
 ---
 
-## 07 — Transformers
+## 08 — Transformers
 
 **Status: Planned**
 
@@ -208,6 +230,14 @@ Deep-Learning-with-PyTorch/
 │   └── main.ipynb
 │
 ├── 02_Autograd/
+│   ├── README.md
+│   └── main.ipynb
+│
+├── 03_Neural_Networks/
+│   ├── README.md
+│   └── main.ipynb
+│
+├── 04_Classification/
 │   ├── README.md
 │   └── main.ipynb
 │
@@ -272,29 +302,27 @@ Parameter update
 Repeat
 ```
 
-A simple trainable neuron can be represented as:
-
-$$
-\hat{y}=wx+b
-$$
-
-and trained using gradient descent.
-
-PyTorch now automates the mechanics:
+For classification, this expands to:
 
 ```text
-nn.Linear
+Input features
     ↓
-Loss function
+Linear transformations
     ↓
-Autograd
+Nonlinear activations
     ↓
-Optimizer
+Learned representation
     ↓
-Updated parameters
+Class logits
+    ↓
+CrossEntropyLoss
+    ↓
+Backpropagation
+    ↓
+Parameter updates
 ```
 
-while the underlying mathematical model remains understood.
+The underlying mathematical model remains understood while PyTorch automates the mechanics.
 
 ---
 
@@ -325,6 +353,8 @@ Autograd
   ↓
 Neural Network Architecture
   ↓
+Classification
+  ↓
 Deep Learning
 ```
 
@@ -345,10 +375,13 @@ Completed:
 * ✅ `MSELoss`
 * ✅ SGD
 * ✅ Vectorized training
+* ✅ Neural Networks
+* ✅ Classification fundamentals
+* ✅ Nonlinear decision boundaries
 
 Current stage:
 
-**Next → Multi-layer Neural Networks**
+**Next → Deeper Training Concepts**
 
 ---
 
@@ -359,4 +392,3 @@ Build a deep understanding of modern deep learning while retaining the ability t
 The end goal is not merely to **use PyTorch**.
 
 It is to understand **why it works**.
-
