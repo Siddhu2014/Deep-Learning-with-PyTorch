@@ -129,7 +129,7 @@ The positional reasoning behind this formula is more important than memorizing i
 
 ## Notebook
 
-Open [`CNN_CIFAR10.ipynb`](./CNN_CIFAR10.ipynb) for the complete implementation and experiments.
+Open [`main.ipynb`](./main.ipynb) for the complete implementation and experiments.
 
 ## Next chapter
 

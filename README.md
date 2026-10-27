@@ -5,12 +5,9 @@ A from-first-principles journey through deep learning with PyTorch.
 This repository is being built alongside a structured learning process. The goal is not simply to learn PyTorch APIs, but to understand the mathematics, computational model, and design decisions behind modern deep learning.
 
 The approach is:
-
-> **Understand first. Implement second. Automate third.**
+**Understand first. Implement second. Automate third.**
 
 PyTorch is used as a tool for expressing concepts that are already understood, rather than as a black box.
-
----
 
 ## Learning Philosophy
 
@@ -22,6 +19,7 @@ Understand the concept
 Implement the mechanism
         ↓
 Use PyTorch to automate it
+```
 
 ## Learning Path
 
@@ -185,6 +183,7 @@ The chapter uses CIFAR-10 to connect the underlying convolution operation with a
 *Open `05_Computer_Vision/README.md`*
 
 ### 06 — Training & Generalization
+
 **Status:** Next  
 Going deeper into how neural networks actually learn and generalize.  
 **Planned topics:**
@@ -209,6 +208,7 @@ Going deeper into how neural networks actually learn and generalize.
 The objective is to understand why training succeeds or fails, rather than simply knowing how to run a training loop.
 
 ### 07 — Sequence Models
+
 **Status:** Planned  
 Understanding models designed for sequential and temporal data.  
 **Planned topics:**
@@ -227,6 +227,7 @@ Understanding models designed for sequential and temporal data.
 The goal is to understand why recurrent architectures were developed and what limitations eventually motivated attention-based architectures.
 
 ### 08 — Attention
+
 **Status:** Planned  
 Building attention from the underlying mathematical operations.  
 **Planned topics:**
@@ -245,6 +246,7 @@ Building attention from the underlying mathematical operations.
 The objective is to understand attention mathematically before treating it as a PyTorch abstraction.
 
 ### 09 — Transformers
+
 **Status:** Planned  
 Understanding the architecture behind modern language and multimodal models.  
 **Planned topics:**
@@ -263,6 +265,7 @@ Understanding the architecture behind modern language and multimodal models.
 The goal is to progress from a manually understandable attention mechanism to a complete Transformer architecture.
 
 ### 10 — Embeddings & Language Models
+
 **Status:** Planned  
 Understanding how neural networks represent language and other discrete information in continuous vector spaces.  
 **Planned topics:**
@@ -280,6 +283,7 @@ Understanding how neural networks represent language and other discrete informat
 - Inference
 
 ### 11 — Multimodal & Generative Models
+
 **Status:** Planned  
 Expanding beyond text and classification toward modern generative and multimodal systems.  
 **Planned topics:**
@@ -293,6 +297,7 @@ Expanding beyond text and classification toward modern generative and multimodal
 - Audio and other modalities
 
 ### 12 — Agentic AI
+
 **Status:** Planned  
 Understanding systems that combine models with tools, memory, planning, and interaction.  
 **Planned topics:**
@@ -309,8 +314,6 @@ Understanding systems that combine models with tools, memory, planning, and inte
 - Evaluation of agentic systems
 
 The goal is to understand agentic AI as a system built on top of the underlying machine-learning concepts rather than treating it as a collection of high-level frameworks.
-
----
 
 ## Repository Structure
 
@@ -344,30 +347,26 @@ Deep-Learning-with-PyTorch/
 └── ...
 ```
 
-**Each chapter contains:**
+Each chapter contains:
 - `README.md`: Documents the chapter's purpose, concepts, and learning scope.
 - `main.ipynb`: Contains the actual experiments, implementations, and observations.
 
----
-
 ## Environment
 
-**Primary development environment:**
+Primary development environment:
 - **Operating System:** Ubuntu 26.04 LTS
 - **Primary Language:** Python
 - **Framework:** PyTorch
 - **Notebook Environment:** Jupyter
 - **Version Control:** Git + GitHub
 
-**Core dependencies currently include:**
+Core dependencies currently include:
 - `torch`
 - `numpy`
 - `jupyter`
 - `matplotlib`
 
-*See `requirements.txt` for the complete project environment.*
-
----
+See `requirements.txt` for the complete project environment.
 
 ## Current Understanding
 
@@ -427,8 +426,6 @@ Classification
 
 The underlying mathematical model remains understood while PyTorch automates the mechanics.
 
----
-
 ## From First Principles to Modern Deep Learning
 
 The learning progression is intentionally structured so that higher-level abstractions are introduced only after their underlying concepts have been understood.
@@ -473,8 +470,6 @@ Agentic AI
 
 This progression is not intended to represent a fixed list of technologies. It represents a progression in understanding.
 
----
-
 ## What This Repository Is Trying to Build
 
 The purpose of this repository is not to collect tutorial code. It is intended to become a record of progressively deeper understanding.
@@ -496,8 +491,6 @@ What are the limitations?
 ```
 
 This approach should make it possible to reason about unfamiliar architectures instead of relying entirely on memorized implementations.
-
----
 
 ## Current Status
 
@@ -531,22 +524,18 @@ This approach should make it possible to reason about unfamiliar architectures i
 - ✅ Confusion-matrix analysis
 - ✅ Visual inspection of CNN predictions
 
----
-
 ## Current Stage
 
-**Next → Training & Generalization**
-
----
+Next → **Training & Generalization**
 
 ## Long-Term Goal
 
 Build a deep understanding of modern deep learning while retaining the ability to reason about what the framework is doing underneath the abstractions.
 
 The end goal is not merely to:
-- Use PyTorch.
+*Use PyTorch.*
 
 It is to understand:
-- Why the models work, what the mathematics is doing, what the framework is automating, and where the abstractions come from.
+*Why the models work, what the mathematics is doing, what the framework is automating, and where the abstractions come from.*
 
 Ultimately, the goal is to progress from understanding individual mathematical operations to being able to reason about complete modern AI systems from first principles.
