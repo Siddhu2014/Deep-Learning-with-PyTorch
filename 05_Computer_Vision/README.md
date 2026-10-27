@@ -133,4 +133,4 @@ Open [`CNN_CIFAR10.ipynb`](./CNN_CIFAR10.ipynb) for the complete implementation 
 
 ## Next chapter
 
-**Sequence Models → RNNs → LSTMs/GRUs → Attention → Transformers**
+**Trainig and Generalization → Sequence Models → RNNs → LSTMs/GRUs → Attention → Transformers**
