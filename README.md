@@ -184,24 +184,16 @@ The chapter uses CIFAR-10 to connect the underlying convolution operation with a
 
 ### 06 — Training & Generalization
 
-**Status:** Next  
+**Status:** Completed  
 Going deeper into how neural networks actually learn and generalize.  
-**Planned topics:**
-- Loss functions
-- Optimizers
-- Learning rates
-- Learning-rate effects
-- Training dynamics
-- Validation
-- Evaluation
-- Overfitting
-- Underfitting
-- Regularization
-- Weight decay
-- Dropout
-- Training diagnostics
-- Model capacity
-- Generalization
+**Topics covered:**
+- Loss functions and optimization
+- Learning rates and learning-rate scheduling
+- Training and validation
+- Training dynamics and diagnostics
+- Overfitting and underfitting
+- Regularization, including weight decay and dropout
+- Model capacity and generalization
 - Data augmentation
 - Hyperparameter experiments
 
@@ -209,22 +201,25 @@ The objective is to understand why training succeeds or fails, rather than simpl
 
 ### 07 — Sequence Models
 
-**Status:** Planned  
+**Status:** Completed  
 Understanding models designed for sequential and temporal data.  
-**Planned topics:**
-- Sequential data
-- Sequence representations
+**Topics covered:**
+- Sequential data and sliding-window construction
 - Recurrent neural networks
-- Hidden states
-- Recurrence
+- Hidden states and recurrence
 - Unrolling through time
+- Backpropagation through time (BPTT)
 - Vanishing and exploding gradients
-- LSTMs
-- GRUs
-- Sequence modelling
-- Sequence classification
+- LSTM architecture, gates, and cell state
+- GRU architecture and gates
+- LSTM vs GRU comparison
+- Sequence prediction
+- Recurrent sequence classification
 
 The goal is to understand why recurrent architectures were developed and what limitations eventually motivated attention-based architectures.
+
+*Open `07_Sequence_Models/main.ipynb`*  
+*Open `07_Sequence_Models/README.md`*
 
 ### 08 — Attention
 
@@ -523,10 +518,30 @@ This approach should make it possible to reason about unfamiliar architectures i
 - ✅ CNN training and evaluation
 - ✅ Confusion-matrix analysis
 - ✅ Visual inspection of CNN predictions
+- ✅ Training & Generalization
+- ✅ Loss functions and optimization
+- ✅ Learning rates and training dynamics
+- ✅ Training and validation
+- ✅ Overfitting and underfitting
+- ✅ Regularization and weight decay
+- ✅ Dropout
+- ✅ Training diagnostics
+- ✅ Model capacity and generalization
+- ✅ Hyperparameter experiments
+- ✅ Sequence Models
+- ✅ Recurrent neural networks
+- ✅ Hidden states and recurrence
+- ✅ Backpropagation through time
+- ✅ Vanishing and exploding gradients
+- ✅ LSTM architecture
+- ✅ GRU architecture
+- ✅ LSTM vs GRU comparison
+- ✅ Sequence prediction
+- ✅ Recurrent sequence classification
 
 ## Current Stage
 
-Next → **Training & Generalization**
+Next → **Attention**
 
 ## Long-Term Goal
 
